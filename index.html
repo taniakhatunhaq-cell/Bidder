@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tania Enterprise | Construction & Materials</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.hero {
+  background: url('https://i.ibb.co/RGw6jWn7/IMG-4768.jpg') center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.call {
+  background: blue;
+  margin-bottom: 10px;
+}
+
+.whatsapp {
+  background: green;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Tania Enterprise</h2>
+<p>Government Contractor & Material Supplier</p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h1>30+ Years Experience</h1>
+<p>We are working with Maheshtala Municipality (Govt project)</p>
+<p>We supply bricks & construction work at best rates</p>
+
+<p><b>আমরা মহেশতলা পৌরসভার সাথে কাজ করছি</b></p>
+<p>ইট এবং নির্মাণ কাজ সেরা দামে প্রদান করি</p>
+
+<a class="btn" href="https://wa.me/919123991412">💬 WhatsApp Now</a>
+</section>
+
+<!-- ABOUT -->
+<section class="section reveal">
+<h2>About Us</h2>
+<p>
+Tania Enterprise (Tania Builder) is a trusted contractor and material supplier.
+Proprietor: Ziyarul Haque Molla
+</p>
+
+<p>
+৩০ বছরের অভিজ্ঞতা সহ আমরা নির্মাণ কাজ এবং ইট সরবরাহ করি।
+</p>
+
+<p><b>Address:</b> Memanpur Middey Para</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section services reveal">
+<h2>Our Services</h2>
+
+<img src="https://i.ibb.co/S4NtRSB9/IMG-4770.jpg">
+<p>Brick Supply / ইট সরবরাহ</p>
+
+<img src="https://i.ibb.co/4whxsw8p/IMG-4769.webp">
+<p>Construction Work / নির্মাণ কাজ</p>
+
+<img src="https://i.ibb.co/99VmC9Jq/IMG-4772.jpg">
+<p>Cement & Materials / সিমেন্ট ও মালামাল</p>
+
+</section>
+
+<!-- PROJECT -->
+<section class="section reveal">
+<h2>Government Project</h2>
+<p>Maheshtala Municipality Project Completed</p>
+
+<img src="https://i.ibb.co/DPsPzyXW/IMG-2426.jpg" width="300">
+
+<p>Trusted Sub Dealer of Dalmia Cement</p>
+</section>
+
+<!-- OWNER -->
+<section class="section reveal">
+<h2>Proprietor</h2>
+
+<img src="https://i.ibb.co/RpyKs4mk/df761259-9589-44e0-a113-c3d9fd7760ca.jpg" width="200">
+
+<p>Ziyarul Haque Molla</p>
+<p>Facebook: Ziyarul Haque Molla</p>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal">
+<h2>Contact Us</h2>
+
+<p>📞 9123991412</p>
+
+<a class="btn" href="tel:9123991412">📞 Call Now</a>
+<a class="btn" href="https://wa.me/919123991412">💬 WhatsApp</a>
+
+</section>
+
+<!-- STICKY BUTTONS -->
+<div class="sticky">
+<a class="btn call" href="tel:9123991412">📞</a><br>
+<a class="btn whatsapp" href="https://wa.me/919123991412">💬</a>
+</div>
+
+<script>
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+</script>
+
+</body>
+</html>
